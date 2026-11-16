@@ -26,7 +26,7 @@ Standorte, Öffnungszeiten, Menü und Kontaktdaten werden zentral in `data/site.
 
 ## GitHub Pages
 
-Der Workflow `.github/workflows/deploy-pages.yml` ist absichtlich nur manuell über `workflow_dispatch` startbar. Dadurch findet ohne ausdrückliche Freigabe keine Veröffentlichung statt.
+Der Workflow `.github/workflows/deploy-pages.yml` veröffentlicht Änderungen an `main` automatisch und kann zusätzlich manuell über `workflow_dispatch` gestartet werden.
 
 Nach Freigabe:
 
@@ -37,7 +37,6 @@ Nach Freigabe:
 ## Vor Veröffentlichung erforderlich
 
 - Echte Originalfotos des Foodtrucks und der Speisen bereitstellen.
-- Wochenstandorte samt vollständigen Adressen und Google-Maps-Links bestätigen.
 - Alle Menüpositionen, Beschreibungen, Preise und Allergenhinweise bestätigen.
 - E-Mail-Adresse ergänzen und Telefonnummer bestätigen.
 - Betreibername, Rechtsform und ladungsfähige Anschrift für das Impressum liefern.
@@ -47,4 +46,4 @@ Nach Freigabe:
 
 ## Datenquellen im Prototyp
 
-Der Name, das Einsatzgebiet Freiburg, das Instagram-Profil und der Catering-Schwerpunkt sind öffentlich auffindbar. Die Telefonnummer und die aufgeführten Speisevarianten stammen aus öffentlich zugänglichen Verzeichniseinträgen und müssen vor Veröffentlichung vom Betreiber bestätigt werden. Die Öffnungszeit `10:00–13:30 Uhr` wurde aus dem Projektauftrag übernommen. Nicht bestätigte Angaben sind auf der Website sichtbar als offen markiert.
+Der Name, das Einsatzgebiet Freiburg, das Instagram-Profil und der Catering-Schwerpunkt sind öffentlich auffindbar. Die Telefonnummer und die aufgeführten Speisevarianten stammen aus öffentlich zugänglichen Verzeichniseinträgen und müssen vor Veröffentlichung vom Betreiber bestätigt werden. Öffnungszeiten und Wochenstandorte wurden vom Auftraggeber bereitgestellt. Nicht bestätigte Angaben sind auf der Website sichtbar als offen markiert.

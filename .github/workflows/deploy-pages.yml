@@ -1,7 +1,9 @@
 name: Deploy to GitHub Pages
 
-# Absichtlich nur manuell startbar. Erst nach Kundenfreigabe in GitHub ausführen.
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:

@@ -32,8 +32,9 @@ function renderLocations() {
   document.querySelector('#schedule').innerHTML = site.locations.map((item) => `
     <article class="schedule-item${item.dayIndex === today ? ' is-today' : ''}">
       <span class="day">${item.day.slice(0, 2)}</span>
-      <div><h3>${item.day}</h3><p>${item.location}</p></div>
+      <div><h3>${item.day}</h3><p>${item.location}<br>${item.address}</p></div>
       <time>${item.time}</time>
+      <a class="route-link" href="${item.mapsUrl}" target="_blank" rel="noopener" aria-label="Route zu ${item.location}, ${item.address} in Google Maps öffnen">Route ${icon('arrow')}</a>
     </article>
   `).join('');
 }
