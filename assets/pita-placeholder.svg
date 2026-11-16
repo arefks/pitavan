@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-labelledby="title desc">
+  <title id="title">Platzhalter für Pita-Foto</title>
+  <desc id="desc">Abstrakte Illustration einer gefüllten Pita</desc>
+  <rect width="720" height="900" fill="#087f8c"/>
+  <circle cx="110" cy="100" r="230" fill="#ef7558" opacity=".75"/>
+  <circle cx="650" cy="770" r="280" fill="#075e68"/>
+  <g transform="translate(90 115) rotate(-6 270 335)">
+    <path d="M110 245c30-150 289-205 358-37 43 105 17 334-174 465-194-90-244-293-184-428z" fill="#e7b96f"/>
+    <path d="M138 245c67-114 249-139 309-26-49 26-101 42-155 43-53 2-105-4-154-17z" fill="#f6dca5"/>
+    <path d="M169 235c28-96 83-124 118-28-9-84 88-108 106-9 58-21 81 17 55 50-95 29-190 28-279-13z" fill="#73a957"/>
+    <path d="M176 242c33-81 76-82 102-5 27-80 73-84 104-11 31-55 67-55 91 5-91 40-191 42-297 11z" fill="#ef7558"/>
+    <path d="M163 265c90 38 194 38 307-2" fill="none" stroke="#fffdf9" stroke-width="28" stroke-linecap="round"/>
+    <path d="M140 336c72 68 203 77 333 15" fill="none" stroke="#ca833c" stroke-width="9" stroke-linecap="round" opacity=".6"/>
+  </g>
+  <text x="360" y="825" text-anchor="middle" fill="#fffdf9" font-family="Georgia,serif" font-size="44">Originalfoto einsetzen</text>
+</svg>

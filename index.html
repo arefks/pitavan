@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#087f8c">
+    <meta name="description" content="Pita Greek Street Food in Freiburg: Standorte, Speisekarte und Catering auf einen Blick.">
+    <meta property="og:title" content="Pita Greek Street Food Freiburg">
+    <meta property="og:description" content="Authentisches Greek Street Food aus dem Foodtruck. Standorte, Speisekarte und Catering.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <title>Pita Greek Street Food | Freiburg</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="data/site.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+    <header class="site-header" id="start">
+      <div class="container nav-wrap">
+        <a class="brand" href="#start" aria-label="Pita Greek Street Food Startseite">
+          <span class="brand-mark" aria-hidden="true">P</span>
+          <span><strong>PITA</strong><small>Greek Street Food</small></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+          <span class="sr-only">Menü öffnen</span>
+          <span></span><span></span>
+        </button>
+        <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+          <a href="#standorte">Standorte</a>
+          <a href="#speisekarte">Speisekarte</a>
+          <a href="#catering">Catering</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Foodtruck · Freiburg & Umgebung</p>
+            <h1>Griechisch.<br><em>Frisch.</em> Auf die Hand.</h1>
+            <p class="hero-lead">Pita, Gyros und Veggie-Varianten direkt aus unserem türkisen Foodtruck.</p>
+            <div class="button-row">
+              <a class="button button-primary" href="#standorte">Heutigen Standort finden</a>
+              <a class="button button-ghost" href="#speisekarte">Zur Speisekarte</a>
+            </div>
+          </div>
+          <div class="hero-visual photo-slot">
+            <img src="assets/foodtruck-placeholder.svg" alt="Platzhalter für ein Originalfoto des türkisen Pita Foodtrucks" width="960" height="1080">
+            <p><strong>Originalfoto vorgesehen</strong><br>Foodtruck-Aufnahme hier einsetzen</p>
+          </div>
+        </div>
+        <div class="hero-note" aria-hidden="true">PITA · GYROS · VEGGIE ·</div>
+      </section>
+
+      <section class="section location-section" id="standorte">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Wo wir heute stehen</p>
+              <h2>Deine Mittagspause,<br>auf griechisch.</h2>
+            </div>
+            <p>Regulär Montag bis Donnerstag von <strong>10:00 bis 13:30 Uhr</strong>. Änderungen und Events geben wir auf Instagram bekannt.</p>
+          </div>
+
+          <div class="today-card" id="today-card" aria-live="polite">
+            <div class="status-dot" aria-hidden="true"></div>
+            <div>
+              <span class="card-label">Heute</span>
+              <h3 id="today-location">Standort wird geladen</h3>
+              <p id="today-meta"></p>
+            </div>
+            <a class="button button-light is-hidden" id="route-button" href="#" target="_blank" rel="noopener">Route starten</a>
+          </div>
+
+          <div class="schedule" id="schedule" aria-label="Wochenplan"></div>
+          <p class="source-note">Hinweis: Die konkreten Wochenstandorte müssen vor Veröffentlichung vom Betreiber bestätigt und in <code>data/site.js</code> ergänzt werden.</p>
+        </div>
+      </section>
+
+      <section class="section menu-section" id="speisekarte">
+        <div class="container">
+          <div class="section-heading menu-heading">
+            <div>
+              <p class="eyebrow">Unsere Speisekarte</p>
+              <h2>Wähle deine Pita.</h2>
+            </div>
+            <p>Frisch zubereitet und ganz nach deinem Geschmack kombiniert. Die Auswahl ist ein Entwurf und wird vor Veröffentlichung bestätigt.</p>
+          </div>
+          <div class="menu-layout">
+            <div class="menu-visual photo-slot photo-slot-food">
+              <img src="assets/pita-placeholder.svg" alt="Platzhalter für ein Originalfoto einer gefüllten Pita" width="720" height="900" loading="lazy">
+              <p><strong>Originalfoto vorgesehen</strong><br>Pita-Nahaufnahme hier einsetzen</p>
+            </div>
+            <div class="menu-content" id="menu-content"></div>
+          </div>
+          <p class="menu-disclaimer">Preise und Allergene sind noch nicht bestätigt. Verbindlich ist die Karte am Foodtruck.</p>
+        </div>
+      </section>
+
+      <section class="section catering-section" id="catering">
+        <div class="container catering-grid">
+          <div>
+            <p class="eyebrow eyebrow-light">Pita kommt zu euch</p>
+            <h2>Ein Foodtruck.<br>Ein Fest.</h2>
+          </div>
+          <div class="catering-copy">
+            <p class="catering-lead">Greek Street Food für Firmenfeiern, Events, Hochzeiten und Geburtstage.</p>
+            <p>Wir bringen den Foodtruck, frische Pitas und entspannte Stimmung direkt zu eurer Veranstaltung. Details und Verfügbarkeit klären wir persönlich.</p>
+            <a class="button button-coral" href="#kontakt">Catering anfragen</a>
+          </div>
+          <div class="catering-list" aria-label="Catering Anlässe">
+            <span>Firmenfeiern</span><span>Hochzeiten</span><span>Geburtstage</span><span>Events</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="kontakt">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">Kontakt</p>
+            <h2>Lust auf Pita?</h2>
+            <p>Für Catering, Events und alle Fragen erreicht ihr uns direkt. Keine Formulare, keine Umwege.</p>
+          </div>
+          <div class="contact-links" id="contact-links"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <a class="brand brand-light" href="#start">
+          <span class="brand-mark" aria-hidden="true">P</span>
+          <span><strong>PITA</strong><small>Greek Street Food</small></span>
+        </a>
+        <p>Authentisches Street Food<br>aus Freiburg.</p>
+        <div class="footer-links">
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <small>© <span id="year"></span> Pita Greek Street Food</small>
+        <small>Prototyp · Nicht zur Veröffentlichung freigegeben</small>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "pita-greek-street-food",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "node scripts/build.mjs"
+  }
+}

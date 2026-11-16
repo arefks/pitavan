@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Platzhalter für Foodtruck-Foto</title>
+  <desc id="desc">Abstrakte türkisfarbene Illustration eines Foodtrucks</desc>
+  <rect width="960" height="1080" fill="#d9eff0"/>
+  <circle cx="810" cy="180" r="230" fill="#ef7558" opacity=".82"/>
+  <path d="M0 770c210-150 460-210 960-70v380H0z" fill="#f8f5ef"/>
+  <g transform="translate(105 355)">
+    <path d="M62 42h490c58 0 105 47 105 105v288H62z" fill="#087f8c"/>
+    <path d="M552 190h104l93 119v126H552z" fill="#075e68"/>
+    <rect x="126" y="106" width="330" height="175" rx="4" fill="#fffdf9"/>
+    <path d="M126 106h330v32H126z" fill="#172329" opacity=".12"/>
+    <text x="291" y="215" text-anchor="middle" fill="#172329" font-family="Georgia,serif" font-size="62" font-weight="bold">PITA</text>
+    <text x="291" y="252" text-anchor="middle" fill="#087f8c" font-family="Arial,sans-serif" font-size="16" letter-spacing="4">GREEK STREET FOOD</text>
+    <path d="M589 226h58l56 75H589z" fill="#d9eff0"/>
+    <circle cx="190" cy="454" r="72" fill="#172329"/><circle cx="190" cy="454" r="30" fill="#f8f5ef"/>
+    <circle cx="610" cy="454" r="72" fill="#172329"/><circle cx="610" cy="454" r="30" fill="#f8f5ef"/>
+  </g>
+  <path d="M90 130c115 8 210-18 292-77" fill="none" stroke="#087f8c" stroke-width="8" stroke-linecap="round" opacity=".35"/>
+  <path d="M90 166c140 8 258-22 350-101" fill="none" stroke="#087f8c" stroke-width="3" stroke-linecap="round" opacity=".3"/>
+</svg>
