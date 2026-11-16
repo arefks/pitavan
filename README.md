@@ -2,6 +2,8 @@
 
 Statischer Website-Prototyp für den Freiburger Foodtruck. Die Seite verwendet nur HTML, CSS und JavaScript, hat keine Laufzeit-Abhängigkeiten und ist für GitHub Pages vorbereitet.
 
+**Website:** [Pita Greek Street Food](https://arefks.github.io/pitavan/)
+
 ## Lokal ansehen
 
 Die Seite kann direkt über `index.html` geöffnet werden. Für einen lokalen Webserver:
