@@ -22,7 +22,9 @@ await Promise.all(['index.html', 'impressum.html', 'datenschutz.html'].map(async
   }
 
   const references = [...html.matchAll(/(?:src|href)="([^"#]+)"/g)].map((match) => match[1]);
-  const localReferences = references.filter((reference) => !/^(?:https?:|mailto:|tel:)/.test(reference));
+  const localReferences = references
+    .filter((reference) => !/^(?:https?:|mailto:|tel:)/.test(reference))
+    .map((reference) => reference.split(/[?#]/)[0]);
   await Promise.all(localReferences.map((reference) => access(path.resolve(dist, path.dirname(file), reference))));
 }));
 
