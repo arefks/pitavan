@@ -35,7 +35,7 @@ function renderLocations() {
       <span class="day">${item.day.slice(0, 2)}</span>
       <div><h3>${item.day}</h3><p>${item.location}<br>${item.address}</p></div>
       <time>${item.time}</time>
-      <a class="route-link" href="${item.mapsUrl}" target="_blank" rel="noopener" aria-label="Route zu ${item.location}, ${item.address} in Google Maps öffnen">Route ${icon('arrow')}</a>
+      <a class="route-link" href="${item.mapsUrl}" target="_blank" rel="noopener" aria-label="Route zu ${item.location}, ${item.address} in Google Maps öffnen">Maps-Route ${icon('arrow')}</a>
     </article>
   `).join('');
 }
@@ -52,7 +52,7 @@ function renderMenu() {
               <p>${item.note}</p>
               ${item.labels?.length ? `<div class="menu-labels">${item.labels.map((label) => `<span>${label}</span>`).join('')}</div>` : ''}
             </div>
-            <strong>${item.price || 'Preis offen'}</strong>
+            ${item.price ? `<strong>${item.price}</strong>` : ''}
           </article>
         `).join('')}
       </div>
@@ -64,6 +64,9 @@ function renderContact() {
   const links = [];
   if (site.contact.phone) {
     links.push(`<a href="tel:${site.contact.phoneHref}">${icon('phone')}<span><small>Telefon</small>${site.contact.phone}</span>${icon('arrow')}</a>`);
+  }
+  if (site.contact.whatsappUrl) {
+    links.push(`<a href="${site.contact.whatsappUrl}" target="_blank" rel="noopener">${icon('phone')}<span><small>WhatsApp</small>Nachricht senden</span>${icon('arrow')}</a>`);
   }
   if (site.contact.email) {
     links.push(`<a href="mailto:${site.contact.email}">${icon('mail')}<span><small>E-Mail</small>${site.contact.email}</span>${icon('arrow')}</a>`);

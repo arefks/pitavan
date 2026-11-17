@@ -2,7 +2,8 @@ window.PITA_SITE = {
   contact: {
     phone: "+49 176 83245118",
     phoneHref: "+4917683245118",
-    email: "",
+    whatsappUrl: "https://wa.me/4917683245118",
+    email: "hi@pitagreekstreetfood.de",
     instagram: "https://www.instagram.com/pitagreekstreetfood/",
     instagramLabel: "@pitagreekstreetfood",
     reviewUrl: "https://maps.app.goo.gl/iE2g8jtNthSLUF3u5"
@@ -43,26 +44,40 @@ window.PITA_SITE = {
   ],
   menu: [
     {
+      title: "Gerichte",
+      items: [
+        { name: "Pita", note: "Mit Füllung, Dip und Extras nach Wahl", price: "10,00 €" },
+        { name: "Box", note: "Mit Füllung, Dip und Extras nach Wahl", price: "14,00 €" },
+        { name: "Pommes", note: "Als Beilage oder pur", price: "4,50 €" }
+      ]
+    },
+    {
       title: "Füllungen",
       items: [
-        { name: "Gyros vom Schwein", note: "Preis noch offen", price: "" },
-        { name: "Gyros vom Hähnchen", note: "Preis noch offen", price: "" },
-        { name: "Halloumi", note: "Preis noch offen", price: "", labels: ["Vegetarisch"] }
+        { name: "Gyros vom Hähnchen", note: "Zart und saftig" },
+        { name: "Gyros vom Schwein", note: "Traditionell und würzig" },
+        { name: "Gegrillter Halloumi", note: "Herzhaft", labels: ["Vegetarisch"] },
+        { name: "Gefüllte Weinblätter", note: "Mediterraner Klassiker", labels: ["Vegan"] }
       ]
     },
     {
       title: "Dips",
       items: [
-        { name: "Tzatziki", note: "Preis noch offen", price: "", labels: ["Vegetarisch"] },
-        { name: "Joghurt · Senf · Minze", note: "Preis noch offen", price: "", labels: ["Vegetarisch"] },
-        { name: "Cocktail-Dip", note: "Preis noch offen", price: "" },
-        { name: "Ajvar", note: "Preis noch offen", price: "", labels: ["Vegan", "Leicht scharf"] }
+        { name: "Tzatziki", note: "Klassisch und frisch", labels: ["Vegetarisch"] },
+        { name: "Cocktail-Dip", note: "Cremig und mild", labels: ["Vegetarisch"] },
+        { name: "Joghurt · Senf · Minze", note: "Frisch und aromatisch", labels: ["Vegetarisch"] },
+        { name: "Ajvar", note: "Würzig und intensiv", labels: ["Vegan", "Leicht scharf"] }
       ]
     },
     {
       title: "Extras",
       items: [
-        { name: "Gefüllte Weinblätter", note: "Preis noch offen", price: "", labels: ["Vegan"] }
+        { name: "Salat", note: "Nach Wahl" },
+        { name: "Pommes", note: "Nach Wahl" },
+        { name: "Weißkraut", note: "Nach Wahl" },
+        { name: "Zwiebeln", note: "Nach Wahl" },
+        { name: "Tomaten", note: "Nach Wahl" },
+        { name: "Griechische Peperoni", note: "Nach Wahl" }
       ]
     }
   ]

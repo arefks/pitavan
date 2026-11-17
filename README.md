@@ -22,7 +22,7 @@ Der Build kopiert alle benötigten Dateien nach `dist/` und prüft die drei HTML
 
 ## Inhalte bearbeiten
 
-Standorte, Öffnungszeiten, Menü, Kontaktdaten und der Google-Rezensionslink werden zentral in `data/site.js` gepflegt. Originalfotos liegen unter `assets/pics/`; die kuratierte Auswahl wird in `index.html` eingebunden.
+Standorte, Öffnungszeiten, Menü, Kontaktdaten, WhatsApp- und Google-Rezensionslink werden zentral in `data/site.js` gepflegt. Originalfotos liegen unter `assets/pics/`; die kuratierte Auswahl wird in `index.html` eingebunden.
 
 `contact.reviewUrl` verweist zentral auf den einzigen Google-Unternehmenseintrag. Falls später ein direkter Link zum Schreibformular bereitgestellt wird, muss nur dieser Wert ersetzt werden. Solange der Wert leer ist, bleibt der Button sichtbar, aber deaktiviert.
 
@@ -39,9 +39,8 @@ Nach Freigabe:
 ## Vor Veröffentlichung erforderlich
 
 - Bildrechte und finale Fotoauswahl bestätigen.
-- Preise und Allergenhinweise bestätigen.
+- Allergenhinweise bestätigen.
 - Optional den aktuellen Maps-Link durch einen direkten Link zum Google-Schreibformular ersetzen.
-- E-Mail-Adresse ergänzen und Telefonnummer bestätigen.
 - Betreibername, Rechtsform und ladungsfähige Anschrift für das Impressum liefern.
 - Datenschutzangaben an das tatsächlich verwendete Hosting anpassen und Rechtstexte prüfen lassen.
 - Logo beziehungsweise finale Wortmarke als Datei bereitstellen, falls vorhanden.
