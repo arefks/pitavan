@@ -22,7 +22,9 @@ Der Build kopiert alle benötigten Dateien nach `dist/` und prüft die drei HTML
 
 ## Inhalte bearbeiten
 
-Standorte, Öffnungszeiten, Menü und Kontaktdaten werden zentral in `data/site.js` gepflegt. Originalfotos können unter `assets/` abgelegt und in `index.html` anstelle der beiden Platzhalter eingebunden werden.
+Standorte, Öffnungszeiten, Menü, Kontaktdaten und der Google-Rezensionslink werden zentral in `data/site.js` gepflegt. Originalfotos liegen unter `assets/pics/`; die kuratierte Auswahl wird in `index.html` eingebunden.
+
+`contact.reviewUrl` verweist zentral auf den einzigen Google-Unternehmenseintrag. Falls später ein direkter Link zum Schreibformular bereitgestellt wird, muss nur dieser Wert ersetzt werden. Solange der Wert leer ist, bleibt der Button sichtbar, aber deaktiviert.
 
 ## GitHub Pages
 
@@ -36,13 +38,18 @@ Nach Freigabe:
 
 ## Vor Veröffentlichung erforderlich
 
-- Echte Originalfotos des Foodtrucks und der Speisen bereitstellen.
-- Alle Menüpositionen, Beschreibungen, Preise und Allergenhinweise bestätigen.
+- Bildrechte und finale Fotoauswahl bestätigen.
+- Preise und Allergenhinweise bestätigen.
+- Optional den aktuellen Maps-Link durch einen direkten Link zum Google-Schreibformular ersetzen.
 - E-Mail-Adresse ergänzen und Telefonnummer bestätigen.
 - Betreibername, Rechtsform und ladungsfähige Anschrift für das Impressum liefern.
 - Datenschutzangaben an das tatsächlich verwendete Hosting anpassen und Rechtstexte prüfen lassen.
 - Logo beziehungsweise finale Wortmarke als Datei bereitstellen, falls vorhanden.
 - Catering-Ablauf und gewünschte Kontaktmöglichkeit bestätigen.
+
+## Eigene Domain
+
+GitHub Pages unterstützt die frühere Domain `www.pitagreekstreetfood.de` über eine `CNAME`-Datei und passende DNS-Einträge. Beides wird erst eingerichtet, wenn Domainbesitz und Freigabe bestätigt sind. Die aktuelle GitHub-Pages-Konfiguration bleibt unverändert nutzbar.
 
 ## Datenquellen im Prototyp
 

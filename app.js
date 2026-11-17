@@ -5,7 +5,8 @@ const icon = (name) => {
     arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
     phone: '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92z"/>',
     mail: '<path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/>',
-    instagram: '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/>'
+    instagram: '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/>',
+    star: '<path d="m12 2.5 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9z"/>'
   };
   return `<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${paths[name]}</svg>`;
 };
@@ -47,10 +48,11 @@ function renderMenu() {
         ${group.items.map((item) => `
           <article class="menu-item">
             <div>
-              <h4>${item.name}${item.vegetarian ? '<span class="veggie">V</span>' : ''}</h4>
+              <h4>${item.name}</h4>
               <p>${item.note}</p>
+              ${item.labels?.length ? `<div class="menu-labels">${item.labels.map((label) => `<span>${label}</span>`).join('')}</div>` : ''}
             </div>
-            <strong>${item.price || 'offen'}</strong>
+            <strong>${item.price || 'Preis offen'}</strong>
           </article>
         `).join('')}
       </div>
@@ -67,6 +69,11 @@ function renderContact() {
     links.push(`<a href="mailto:${site.contact.email}">${icon('mail')}<span><small>E-Mail</small>${site.contact.email}</span>${icon('arrow')}</a>`);
   }
   links.push(`<a href="${site.contact.instagram}" target="_blank" rel="noopener">${icon('instagram')}<span><small>Instagram</small>${site.contact.instagramLabel}</span>${icon('arrow')}</a>`);
+  if (site.contact.reviewUrl) {
+    links.push(`<a href="${site.contact.reviewUrl}" target="_blank" rel="noopener">${icon('star')}<span><small>Deine Erfahrung</small>Auf Google bewerten</span>${icon('arrow')}</a>`);
+  } else {
+    links.push(`<div class="review-entry">${icon('star')}<div><button class="button review-button" type="button" disabled>Auf Google bewerten</button><small>Direkter Rezensionslink noch erforderlich</small></div></div>`);
+  }
   if (!site.contact.email) {
     links.push('<div class="contact-missing"><small>E-Mail</small><span>Adresse vor Veröffentlichung ergänzen</span></div>');
   }

@@ -4,7 +4,8 @@ window.PITA_SITE = {
     phoneHref: "+4917683245118",
     email: "",
     instagram: "https://www.instagram.com/pitagreekstreetfood/",
-    instagramLabel: "@pitagreekstreetfood"
+    instagramLabel: "@pitagreekstreetfood",
+    reviewUrl: "https://maps.app.goo.gl/iE2g8jtNthSLUF3u5"
   },
   locations: [
     {
@@ -44,23 +45,24 @@ window.PITA_SITE = {
     {
       title: "Füllungen",
       items: [
-        { name: "Gyros", note: "Bitte Ausführung und Preis bestätigen", price: "" },
-        { name: "Hähnchen", note: "Bitte Ausführung und Preis bestätigen", price: "" },
-        { name: "Bifteki", note: "Bitte Ausführung und Preis bestätigen", price: "" },
-        { name: "Halloumi", note: "Vegetarisch · Bitte Preis bestätigen", price: "", vegetarian: true }
+        { name: "Gyros vom Schwein", note: "Preis noch offen", price: "" },
+        { name: "Gyros vom Hähnchen", note: "Preis noch offen", price: "" },
+        { name: "Halloumi", note: "Preis noch offen", price: "", labels: ["Vegetarisch"] }
       ]
     },
     {
       title: "Dips",
       items: [
-        { name: "Tzatziki", note: "Bitte Preis bestätigen", price: "", vegetarian: true },
-        { name: "Joghurt · Senf · Minze", note: "Bitte Preis bestätigen", price: "", vegetarian: true }
+        { name: "Tzatziki", note: "Preis noch offen", price: "", labels: ["Vegetarisch"] },
+        { name: "Joghurt · Senf · Minze", note: "Preis noch offen", price: "", labels: ["Vegetarisch"] },
+        { name: "Cocktail-Dip", note: "Preis noch offen", price: "" },
+        { name: "Ajvar", note: "Preis noch offen", price: "", labels: ["Vegan", "Leicht scharf"] }
       ]
     },
     {
       title: "Extras",
       items: [
-        { name: "Extras laut aktueller Karte", note: "Auswahl und Preise ergänzen", price: "" }
+        { name: "Gefüllte Weinblätter", note: "Preis noch offen", price: "", labels: ["Vegan"] }
       ]
     }
   ]
