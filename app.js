@@ -97,8 +97,44 @@ function setupNavigation() {
   }));
 }
 
+function setupHeroRotation() {
+  const rotator = document.querySelector('[data-hero-rotator]');
+  const slides = [...rotator.querySelectorAll('.hero-slide')];
+  const controls = [...rotator.querySelectorAll('[data-hero-slide]')];
+  let current = 0;
+  let timer;
+
+  const showSlide = (index) => {
+    current = index;
+    slides.forEach((slide, slideIndex) => slide.classList.toggle('is-active', slideIndex === index));
+    controls.forEach((control, controlIndex) => {
+      const active = controlIndex === index;
+      control.classList.toggle('is-active', active);
+      control.setAttribute('aria-pressed', String(active));
+    });
+  };
+
+  const stop = () => clearInterval(timer);
+  const start = () => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    stop();
+    timer = setInterval(() => showSlide((current + 1) % slides.length), 6000);
+  };
+
+  controls.forEach((control, index) => control.addEventListener('click', () => {
+    showSlide(index);
+    start();
+  }));
+  rotator.addEventListener('mouseenter', stop);
+  rotator.addEventListener('mouseleave', start);
+  rotator.addEventListener('focusin', stop);
+  rotator.addEventListener('focusout', start);
+  start();
+}
+
 renderLocations();
 renderMenu();
 renderContact();
 setupNavigation();
+setupHeroRotation();
 document.querySelector('#year').textContent = new Date().getFullYear();

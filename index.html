@@ -11,9 +11,9 @@
     <meta property="og:locale" content="de_DE">
     <title>Pita Greek Street Food | Freiburg</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css?v=20261117">
-    <script src="data/site.js?v=20261117" defer></script>
-    <script src="app.js?v=20261117" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20261117-2">
+    <script src="data/site.js?v=20261117-2" defer></script>
+    <script src="app.js?v=20261117-2" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Zum Inhalt springen</a>
@@ -43,14 +43,19 @@
           <div class="hero-copy">
             <p class="eyebrow">Foodtruck · Freiburg & Umgebung</p>
             <h1>Griechisch.<br><em>Frisch.</em> Auf die Hand.</h1>
-            <p class="hero-lead">Pita, Gyros und Veggie-Varianten direkt aus unserem türkisen Foodtruck.</p>
+            <p class="hero-lead">Pita, Gyros und Veggie-Varianten direkt aus unserem Foodtruck.</p>
             <div class="button-row">
               <a class="button button-primary" href="#standorte">Heutigen Standort finden</a>
               <a class="button button-ghost" href="#speisekarte">Zur Speisekarte</a>
             </div>
           </div>
-          <div class="hero-visual photo-slot">
-            <img src="assets/pics/foodtruck-serving-framed-by-leaves.jpeg" alt="Der türkise Pita Foodtruck während der Ausgabe" width="1080" height="1350" fetchpriority="high" decoding="async">
+          <div class="hero-visual photo-slot" data-hero-rotator>
+            <img class="hero-slide is-active" src="assets/pics/foodtruck-greece-composite.jpeg" alt="Pita Foodtruck vor griechischer Küstenkulisse" width="1086" height="1448" fetchpriority="high" decoding="async">
+            <img class="hero-slide" src="assets/pics/foodtruck-serving-framed-by-leaves.jpeg" alt="Der Pita Foodtruck während der Ausgabe" width="1080" height="1350" decoding="async">
+            <div class="hero-slide-controls" role="group" aria-label="Hero-Bild auswählen">
+              <button class="is-active" type="button" aria-label="Griechische Küstenkulisse anzeigen" aria-pressed="true" data-hero-slide="0"></button>
+              <button type="button" aria-label="Foodtruck bei der Ausgabe anzeigen" aria-pressed="false" data-hero-slide="1"></button>
+            </div>
           </div>
         </div>
         <div class="hero-note" aria-hidden="true">PITA · GYROS · VEGGIE ·</div>
@@ -63,7 +68,7 @@
               <p class="eyebrow">Wo wir heute stehen</p>
               <h2>Deine Mittagspause,<br>auf griechisch.</h2>
             </div>
-            <p>Regulär Montag bis Donnerstag von <strong>10:00 bis 13:30 Uhr</strong>. Änderungen und Events geben wir auf Instagram bekannt.</p>
+            <p>Regulär Montag bis Donnerstag von <strong>10:00 bis 13:30 Uhr</strong>. Änderungen und öffentliche Events geben wir auf Instagram bekannt.</p>
           </div>
 
           <div class="today-card" id="today-card" aria-live="polite">
@@ -125,6 +130,24 @@
             <figure class="gallery-item gallery-item-wide">
               <img src="assets/pics/three-dips-on-serving-board.jpeg" alt="Drei Dips auf einem Servierbrett" width="1080" height="1350" loading="lazy" decoding="async">
               <figcaption>Dips zum Teilen</figcaption>
+            </figure>
+          </div>
+          <div class="gallery-more">
+            <figure class="gallery-item">
+              <img src="assets/pics/assembling-gyros-pita-with-tongs.jpeg" alt="Eine Gyros-Pita wird mit einer Zange belegt" width="1080" height="1350" loading="lazy" decoding="async">
+              <figcaption>Handgriff für Handgriff</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="assets/pics/guest-holding-gyros-pita.jpeg" alt="Ein Gast hält eine frisch servierte Gyros-Pita" width="1080" height="1350" loading="lazy" decoding="async">
+              <figcaption>Pita-Moment</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="assets/pics/seasoned-fries-close-up.jpeg" alt="Gewürzte Pommes in Nahaufnahme" width="1080" height="1350" loading="lazy" decoding="async">
+              <figcaption>Pommes mit Würze</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="assets/pics/three-pitas-on-serving-board-01.jpeg" alt="Drei gefüllte Pitas auf einem Servierbrett" width="1080" height="1350" loading="lazy" decoding="async">
+              <figcaption>Für die Runde</figcaption>
             </figure>
           </div>
         </div>
