@@ -43,7 +43,6 @@ Nach Freigabe:
 - Optional den aktuellen Maps-Link durch einen direkten Link zum Google-Schreibformular ersetzen.
 - Betreibername, Rechtsform und ladungsfähige Anschrift für das Impressum liefern.
 - Datenschutzangaben an das tatsächlich verwendete Hosting anpassen und Rechtstexte prüfen lassen.
-- Logo beziehungsweise finale Wortmarke als Datei bereitstellen, falls vorhanden.
 - Catering-Ablauf und gewünschte Kontaktmöglichkeit bestätigen.
 
 ## Eigene Domain
