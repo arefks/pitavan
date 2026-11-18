@@ -113,14 +113,21 @@ h1 em { color: var(--turquoise); font-weight: inherit; }
 
 .gallery-section { background: var(--white); }
 .gallery-heading { margin-bottom: 38px; }
-.gallery-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; grid-template-rows: repeat(2, minmax(0, 280px)); gap: 12px; }
+.gallery-sequence { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 310px; gap: 12px; }
 .gallery-item { position: relative; min-width: 0; margin: 0; overflow: hidden; background: var(--turquoise-soft); }
-.gallery-item-featured { grid-row: 1 / 3; }
-.gallery-item-wide { grid-column: 2 / 4; }
 .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
 .gallery-item:hover img { transform: scale(1.025); }
 .gallery-item figcaption { position: absolute; right: 12px; bottom: 12px; left: 12px; padding: 9px 11px; background: rgba(16,26,30,.82); color: white; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; backdrop-filter: blur(8px); }
-.gallery-more { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 260px; gap: 12px; margin-top: 12px; }
+.gallery-item figcaption span { margin-right: 8px; color: #86d7dc; }
+
+.philosophy-section { background: var(--paper); }
+.philosophy-grid { display: grid; grid-template-columns: .72fr 1.28fr; align-items: start; gap: clamp(50px, 9vw, 130px); }
+.philosophy-heading { position: sticky; top: 110px; }
+.philosophy-heading h2 { font-size: clamp(56px, 7vw, 96px); }
+.philosophy-copy { max-width: 740px; }
+.philosophy-copy p { margin: 0 0 22px; color: var(--muted); font-size: 17px; }
+.philosophy-copy .philosophy-lead { margin-bottom: 32px; color: var(--ink); font-family: var(--serif); font-size: clamp(27px, 3.2vw, 42px); line-height: 1.16; }
+.philosophy-copy .philosophy-mission { margin: 34px 0; padding: 22px 26px; border-left: 4px solid var(--coral); background: var(--white); color: var(--ink); font-family: var(--serif); font-size: 26px; line-height: 1.25; }
 
 .catering-section { overflow: hidden; background: var(--ink); color: white; }
 .catering-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px 90px; }
@@ -176,7 +183,7 @@ h1 em { color: var(--turquoise); font-weight: inherit; }
   .main-nav.is-open { display: flex; }
   .main-nav a { padding: 15px 8px; border-bottom: 1px solid var(--line); font-size: 16px; }
   .hero { padding-top: 34px; }
-  .hero-grid, .section-heading, .menu-layout, .catering-grid, .contact-grid { grid-template-columns: 1fr; }
+  .hero-grid, .section-heading, .menu-layout, .philosophy-grid, .catering-grid, .contact-grid { grid-template-columns: 1fr; }
   .hero-grid { gap: 38px; }
   .hero-visual { min-height: 480px; }
   .hero-note { margin-top: 30px; }
@@ -186,10 +193,8 @@ h1 em { color: var(--turquoise); font-weight: inherit; }
   .schedule { grid-template-columns: 1fr 1fr; }
   .schedule-item { min-height: 155px; }
   .menu-visual { min-height: 460px; position: relative; top: auto; }
-  .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 390px 240px 240px; }
-  .gallery-item-featured { grid-column: 1 / -1; grid-row: auto; }
-  .gallery-item-wide { grid-column: 1 / -1; }
-  .gallery-more { grid-template-columns: 1fr 1fr; grid-auto-rows: 240px; }
+  .gallery-sequence { grid-template-columns: 1fr 1fr; grid-auto-rows: 280px; }
+  .philosophy-heading { position: static; }
   .catering-copy { padding-top: 0; }
   .catering-list { grid-template-columns: 1fr 1fr; }
   .contact-grid { gap: 40px; }
@@ -207,13 +212,14 @@ h1 em { color: var(--turquoise); font-weight: inherit; }
   .button-row, .button-row .button { width: 100%; }
   .hero-visual { min-height: 390px; }
   .section { padding: 72px 0; }
-  .section-heading h2, .contact-section h2, .catering-section h2 { font-size: 46px; }
+  .section-heading h2, .philosophy-section h2, .contact-section h2, .catering-section h2 { font-size: 46px; }
   .schedule { grid-template-columns: 1fr; }
   .schedule-item { min-height: 128px; }
   .menu-visual { min-height: 370px; }
   .menu-item { gap: 10px; }
-  .gallery-grid { grid-template-rows: 320px 200px 200px; gap: 8px; }
-  .gallery-more { grid-auto-rows: 200px; gap: 8px; margin-top: 8px; }
+  .gallery-sequence { grid-auto-rows: 210px; gap: 8px; }
+  .philosophy-copy p { font-size: 16px; }
+  .philosophy-copy .philosophy-lead { font-size: 28px; }
   .catering-list { grid-template-columns: 1fr 1fr; }
   .catering-list span { min-height: 90px; font-size: 12px; }
   .contact-links > a { grid-template-columns: 24px 1fr 18px; gap: 13px; }

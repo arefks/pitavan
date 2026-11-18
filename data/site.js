@@ -46,9 +46,10 @@ window.PITA_SITE = {
     {
       title: "Gerichte",
       items: [
-        { name: "Pita", note: "Mit Füllung, Dip und Extras nach Wahl", price: "10,00 €" },
-        { name: "Box", note: "Mit Füllung, Dip und Extras nach Wahl", price: "14,00 €" },
-        { name: "Pommes", note: "Als Beilage oder pur", price: "4,50 €" }
+        { name: "Pita", note: "Mit Füllung, Dip und Extras nach Wahl" },
+        { name: "Box", note: "Mit Füllung, Dip und Extras nach Wahl" },
+        { name: "Kleine Box", note: "Gyros, Pommes und Dip" },
+        { name: "Pommes", note: "Als Beilage oder pur" }
       ]
     },
     {
